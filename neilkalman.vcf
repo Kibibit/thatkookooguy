@@ -1,0 +1,24 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Kalman;Neil;;;
+FN:Neil Kalman
+ORG:kibibit
+ADR;TYPE=WORK:
+TITLE:Software Architect
+TEL;TYPE=CELL:0523531234
+TEL;TYPE=WORK:
+TEL;TYPE=HOME:
+TEL;TYPE=MSG:
+EMAIL;TYPE=WORK:thatkookooguy@kibibit.io
+URL;TYPE=Digital Business Card:
+URL:https://thatkookooguy.kibibit.io
+URL;TYPE=Website:https://thatkookooguy.kibibit.io
+URL;TYPE=WhatsApp:https://wa.me/972523531234
+URL;TYPE=Calendar:https://cal.kibibit.io/thatkookooguy
+URL;TYPE=GitHub:https://github.com/thatkookooguy
+URL;TYPE=Buy me a coffee:https://www.buymeacoffee.com/thatkookooguy
+URL;TYPE=LinkedIn:https://linkedin.com/in/neil-kalman
+KEY;TYPE=PGP;ENCODING=b:
+NOTE:
+UID:EnBizCard-100667881
+END:VCARD
