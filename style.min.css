@@ -4,3 +4,76 @@ header {
     background-image: url(https://kibibit.io/kibibit-assets/4HPEcJ8.jpg);
     background-size: cover;
 }
+
+codersrank-summary {
+    margin-bottom: 1em;
+    --bg-color: transparent;
+    --badge-bg-color: #161616;
+    --badge-text-color: #fff;
+    --badges-padding: 0px;
+    --badge-padding: 8px;
+    /* --badge-margin: 16px; */
+    --badge-border-radius: 8px;
+    --badge-rank-font-size: 16px;
+    --badge-technology-font-size: 18px;
+    --badge-location-font-size: 16px;
+    /* --badge-icon-size: 32px; */
+    --badge-border: 1px solid rgba(0, 0, 0, 0.1);
+    --badge-box-shadow: none;
+    --badge-technology-font-size: 12px;
+    --badge-location-font-size: 10px;
+}
+
+::shadow .codersrank-summary-branding svg path {
+    fill: #fff;
+}
+
+codersrank-portfolio {
+    /* --grid-columns: 1; */
+
+    --item-bg-color: #2a2a2a;
+    --item-padding: 0.5em;
+    --item-border-radius: 8px;
+    --title-font-size: 16px;
+    --date-font-size: 12px;
+    --description-font-size: 14px;
+    --item-spacing: 1em;
+
+    --link-hover-bg-color: rgba(255,255,255,0.125);
+    --link-active-bg-color: rgba(255,255,255,0.075);
+    --tag-bg-color: rgba(255,255,255,0.075);
+    --tag-font-size: 12px;
+    --link-bg-color: rgba(128, 39, 142, 0.61);
+    --link-text-color: white;
+    --link-padding: 0.3em;
+}
+
+.ContributionCalendar-label {
+    display: none;
+}
+
+table.ContributionCalendar-grid td {
+    padding: 3px;
+}
+
+.calendar {
+    font-family: "Comfortaa", serif;
+    border: none;
+}
+
+.contrib-column.table-column {
+    vertical-align: middle;
+}
+
+.contrib-number {
+    color: white;
+}
+
+.calendar table {
+    border-spacing: 0 !important;
+}
+
+.float-right.color-fg-muted.d-flex.flex-items-center {
+    font-size: 0.8em;
+    padding: 0.5em 0.8em 0;
+}

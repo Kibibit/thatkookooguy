@@ -13,6 +13,10 @@
   <script>
     "http" == window.location.href.substr(0, 4) && "/" != window.location.href.slice(-1) && window.location.replace(window.location.href + "/");
   </script>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+  />
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&amp;display=swap" rel="stylesheet">
   <title>Neil Kalman's Digital Business Card</title>
   <style>
@@ -329,8 +333,31 @@
           </a></div>
       </div>
     </div>
+    <!-- CODERSRANK SECTION -->
+    <div style="width: 100%">
+      <h3 class="textColor" style="margin-bottom: 1em">My CodersRank</h3>
+      <codersrank-summary username="thatkookooguy" show-header="false"></codersrank-summary>
+      <!-- <codersrank-activity username="thatkookooguy" legend="false" labels tooltip step="5"></codersrank-activity> -->
+      <div class="calendar">
+        <!-- Loading stuff -->
+        Loading the data just for you.
+      </div>
+      <codersrank-skills-chart
+        username="thatkookooguy"
+        labels
+        tooltip
+        skills="JavaScript,Typescript,SCSS,Vue,Svelte,TypeScript,CSS,HTML"
+        svg-width="1120"
+        svg-height="400"
+      ></codersrank-skills-chart>
+      <codersrank-portfolio
+        username="thatkookooguy"
+        grid
+        company="false"
+      ></codersrank-portfolio>
+    </div>
     <!-- GITHUB REPOS -->
-    <div>
+    <!-- <div>
       <h3 class="textColor" style="margin-bottom: 1em">My GitHub Repos</h3>
       <div class="github-card" data-github="kibibit" data-width="440" data-height="" data-theme="default"></div>
       <a href="https://github.com/kibibit/configit" target="_blank"><img src="https://gh-card.dev/repos/kibibit/configit.svg?fullname="></a>
@@ -338,7 +365,7 @@
       <a href="https://github.com/kibibit/achievibit" target="_blank"><img src="https://gh-card.dev/repos/kibibit/achievibit.svg?fullname="></a>
       <a href="https://github.com/kibibit/kb-steam-card" target="_blank"><img src="https://gh-card.dev/repos/kibibit/kb-steam-card.svg?fullname="></a>
       <a href="https://kibibit.io/talking-avatars/" target="_blank"><img src="https://gh-card.dev/repos/kibibit/talking-avatars.svg?fullname="></a>
-    </div>
+    </div> -->
   </main>
   <footer class="textColor" style="background-color: rgb(33, 33, 33);">
     Created with
@@ -348,6 +375,16 @@
   <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
   <script src="./qrcode.min.js"></script>
   <script>let m = document.getElementById("modal"), c = document.getElementById("close"), ki = document.getElementById("keyView"), cv = document.getElementById("copyView"), curl = document.getElementById("copyURL"), qrv = document.getElementById("qrView"), qr = document.getElementById("qr"), s = document.getElementById("share"), sqr = document.getElementById("showQR"), sk = document.getElementById("showKey"); function tC(e) { "2rem" == e.style.top ? (e.style.visibility = "visible", e.style.top = "0px", e.style.opacity = 1) : (e.style.top = "2rem", e.style.opacity = 0, setTimeout(() => { e.style.visibility = "hidden" }, 200)) } function dN(e) { e.style.display = "none" } window.addEventListener("load", () => { document.querySelector("#topActions").style.display = "flex", qr.innerHTML = new QRCode({ content: window.location.href, container: "svg-viewbox", join: !0, ecl: "L", padding: 0 }).svg() }), navigator.canShare ? s.addEventListener("click", () => { navigator.share({ title: document.title, text: "You can view my Digital Business Card here:", url: window.location.href }) }) : s.addEventListener("click", () => { tC(m), cv.style.display = "flex", dN(qrv), ki && dN(ki) }), sqr.addEventListener("click", () => { tC(m), qrv.style.display = "block", dN(cv), ki && dN(ki) }), sk && sk.addEventListener("click", () => { tC(m), ki && (ki.style.display = "flex"), dN(cv), dN(qrv) }), c.addEventListener("click", () => tC(m)), curl.addEventListener("click", async () => { let e = curl.querySelectorAll(".iconColor")[1]; await navigator.clipboard.writeText(window.location.href).then(t => { e.innerText = "Copied", setTimeout(() => { e.innerText = "Copy URL" }, 1e3) }) });</script>
+  <script src="https://unpkg.com/@codersrank/summary/codersrank-summary.min.js"></script>
+  <script src="https://unpkg.com/@codersrank/activity/codersrank-activity.min.js"></script>
+  <script src="https://unpkg.com/@codersrank/skills-chart/codersrank-skills-chart.min.js"></script>
+  <script src="https://unpkg.com/@codersrank/portfolio/codersrank-portfolio.min.js"></script>
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+  <script>
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "thatkookooguy", { responsive: true, global_stats: false });
+
+  </script>
 </body>
 
 </html>
